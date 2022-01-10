@@ -40,7 +40,7 @@ import java.util.HashMap;
 public class PubSubServiceTest {
 
     // MUST replace this URL to your instance on RabbitMQ
-    private static final String AMQP_URL="amqps://lolgkfrt:JrxrfAVFIzKhztFY4NCLTtyRwvEIaFEX@shark.rmq.cloudamqp.com/lolgkfrt";
+    private static final String AMQP_URL="amqps://wvyklejc:bSSFBxh32XicxvU3jFx1F1_Li312FJfv@chimpanzee.rmq.cloudamqp.com/wvyklejc";
 
     private static final String AMQP_EXCHANGE = "acme.sales.topic";
     private static final String AMQP_TOPIC = "acme.sales.bookingconfirmed";
@@ -58,7 +58,7 @@ public class PubSubServiceTest {
         String message ="This is a test message sent @ "+new Date();
 
         //3. Test the publish
-//        pubSubService.publish(message);
+        // pubSubService.publish(message);
 
         //4. Test the subscribe
         subscribeTest(pubSubService);

@@ -21,7 +21,7 @@ import java.util.HashMap;
 public class PaymentAuditTest {
 
     // MUST replace this URL to your instance on RabbitMQ
-    final private static String AMQP_URL="amqps://lolgkfrt:JrxrfAVFIzKhztFY4NCLTtyRwvEIaFEX@shark.rmq.cloudamqp.com/lolgkfrt";
+    final private static String AMQP_URL="amqps://wvyklejc:bSSFBxh32XicxvU3jFx1F1_Li312FJfv@chimpanzee.rmq.cloudamqp.com/wvyklejc";
 
     private static MessagingService messagingService;
 

@@ -24,16 +24,16 @@ abstract public class JDBCBase {
     // MUST Change this for your setup
     // This infor is available on the Elephant SQL 'Detail' page for instance
     // If you are running PostgreSQL localy then you need to check the setp of local instance
-    protected final static String JDBC_HOST="ziggy.db.elephantsql.com";
+    protected final static String JDBC_HOST="tyke.db.elephantsql.com";
     protected final static String JDBC_PORT="5432";
-    protected final static String JDBC_USER="zuzyxits";
-    protected final static String JDBC_PASSWORD="MUST SETUP";
+    protected final static String JDBC_USER="ftwmuplg";
+    protected final static String JDBC_PASSWORD="5XC_U689X4JqV6C9J8etTwVhgshdCvLU";
 
     // Name of the default DB is the same as the user - you need to change it for local DB
     protected final static String JDBC_DB= JDBC_USER;
 
 
-    protected final static String JDBC_URL="jdbc:postgresql://"+JDBC_HOST+":"+JDBC_PORT+"/"+ JDBC_DB;
+    protected final static String JDBC_URL="jdbc:postgresql://"+  JDBC_HOST+":"+JDBC_PORT+"/"+ JDBC_DB;
 
 
     // JDBC Driver

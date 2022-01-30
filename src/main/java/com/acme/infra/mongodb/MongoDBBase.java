@@ -17,13 +17,13 @@ public abstract class MongoDBBase {
     // SETUP THESE PARAMETERS FOR YOUR INSTANCE
     // If hostname is not  good you would get network error
     // If user/password are bad you would get "'bad auth : Authentication failed."
-    final public static String MONGODB_HOST="acmetravel.46e5h.mongodb.net";
+    final public static String MONGODB_HOST="acmetravel.snmvo.mongodb.net";
 
-    final public static String MONGODB_USER="repouser";
-    final public static String MONGODB_PASSWORD="repouser";
+    final public static String MONGODB_USER="gilles";
+    final public static String MONGODB_PASSWORD="hfgdhmljrlekshrjnfsdsdfg";
 
     // Ensure the database name is good
-    final public static String DATABASE_NAME="acmetravel";
+    final public static String DATABASE_NAME="AcmeTravel";
 
     // Connection string for MongoDB
     final public static String MONGODB_CLUSTER_URL="mongodb+srv://"+MONGODB_USER+":"+MONGODB_PASSWORD+"@"+MONGODB_HOST+"/"+DATABASE_NAME;
@@ -78,7 +78,7 @@ public abstract class MongoDBBase {
 
         MongoCollection mongoCollection = database.getCollection(collection);
 
-        long count = mongoCollection.countDocuments(filter);
+        long count = mongoCollection.count(filter);
 
         mongoClient.close();
 

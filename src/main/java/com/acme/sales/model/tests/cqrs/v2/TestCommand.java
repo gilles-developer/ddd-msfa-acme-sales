@@ -29,9 +29,9 @@ public class TestCommand {
         int customerReference = 1;
 
         Proposal proposal = new Proposal(customerReference, vacationPackage_3);
-        proposal.addPax("John","","Doe",38);
-        proposal.addPax("Jane","","Doe",32);
-        proposal.addPax("Jack","","Doe",6);
+        proposal.addPax("Mark","","Doe",38);
+        proposal.addPax("Sophie","","Doe",32);
+        proposal.addPax("Caroline","","Doe",6);
 
         // 3. Create the command object v2
         CreateProposalCommand createProposalCommand = new CreateProposalCommand(proposal);

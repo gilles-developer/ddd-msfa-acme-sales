@@ -9,7 +9,7 @@ public class MongoDBRepoTest extends MongoDBBase {
 
         MongoDBRepoTest mongoDBRepoTest = new MongoDBRepoTest();
 
-        String json = "{'name': 'bob', 'age': 12}";
+        String json = "{'name': 'bobette', 'age': 16}";
 
         mongoDBRepoTest.executeInsert("test", json);
         System.out.println("1. inserted into collection");
@@ -17,5 +17,6 @@ public class MongoDBRepoTest extends MongoDBBase {
         json = mongoDBRepoTest.find("test", Filters.eq("name", "bob")).iterator().next().toString();
 
         System.out.println("2. Retrieved from mongodb: " + json);
+
     }
 }

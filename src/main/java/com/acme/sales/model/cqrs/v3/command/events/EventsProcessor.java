@@ -6,6 +6,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Base64;
+import java.util.Date;
 
 /**
  * This is a scheduled event processor job that continuously try to send the unsent events to MQ
@@ -33,6 +34,9 @@ public class EventsProcessor implements  Runnable{
     @Override
     public void run() {
         while(true) {
+
+            System.out.println(new Date() + ": Events processor starting/awake...");
+
             // 1. Get the unprocessed events
             ArrayList<ProposalEvent> unsentEvents = proposalEventRepo.getUnprocessed();
 
